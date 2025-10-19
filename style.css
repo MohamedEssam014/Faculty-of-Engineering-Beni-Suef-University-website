@@ -1,0 +1,340 @@
+/* General Styles */
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    /* تم حذف خاصية overflow: hidden من هنا لحل مشكلة القائمة */
+}
+
+/* Header */
+header {
+    background: #00447C;
+    color: #fff;
+    padding: 25px 0 15px 0; /* زيادة المساحة العمودية */
+    border-bottom: #FFC107 3px solid;
+}
+
+/* === التعديل الأساسي هنا === */
+header .container {
+    display: flex;
+    flex-direction: column; /* يجعل العناصر مكدسة عمودياً */
+    align-items: center;   /* يركز كل العناصر في المنتصف أفقياً */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* مسافة بين الشعار وقائمة التنقل */
+}
+
+header .logo img {
+    width: 85px;  /* <<< زيادة حجم الشعار */
+    height: auto;
+    margin-left: 20px; /* مسافة بين الشعار والنص */
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 36px; /* <<< زيادة حجم النص */
+}
+
+header nav {
+    /* لا توجد حاجة لقواعد معقدة للتوسيط الآن */
+}
+/* === نهاية التعديل === */
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header a.active, header a:hover {
+    color: #FFC107;
+}
+}
+
+/* Hero Section */
+.hero {
+    background: #005A9E; /* BSU Medium Blue */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* News Section */
+.news {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.news h3 {
+    font-size: 2em;
+    color: #00447C;
+    margin-bottom: 30px; /* Added margin */
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* === NEW AND UPDATED STYLES FOR NEWS ITEMS === */
+.news-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Softer corners */
+    overflow: hidden; /* To contain the image corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px; /* Fixed height for all news images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.news-content {
+    padding: 20px;
+    flex-grow: 1; /* Allows content to fill space */
+    display: flex;
+    flex-direction: column;
+}
+
+.news-date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.news-content h4 {
+    color: #005A9E;
+    margin-top: 0;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Pushes the link to the bottom */
+}
+
+.news-content a {
+    text-decoration: none;
+    color: #00447C;
+    font-weight: bold;
+    align-self: flex-start; /* Align link to the right */
+}
+
+.news-content a:hover {
+    text-decoration: underline;
+}
+
+/* Page Content section for inner pages */
+.page-content {
+    background: #fff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    line-height: 1.8;
+}
+
+.page-content h2 {
+    color: #00447C;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.page-content h3 {
+    color: #005A9E;
+}
+
+/* Button Link Style */
+.button-link {
+    display: inline-block;
+    background-color: #00447C;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.button-link:hover {
+    background-color: #005A9E;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0;
+    list-style: none;
+    border-radius: 5px;
+    z-index: 100; /* تم رفع القيمة لضمان ظهورها فوق كل العناصر */
+}
+
+.dropdown-content li a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+    color: #00447C;
+}
+/* Contact Page Styles */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form h3, .contact-info h3 {
+    margin-top: 0;
+    color: #00447C;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #00447C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #005A9E;
+}
+
+.contact-info p {
+    margin: 0 0 15px 0;
+    line-height: 1.7;
+    font-size: 16px;
+}
+.contact-info i {
+    color: #005A9E;
+    margin-left: 10px;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+
+/* Responsive for contact page */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
