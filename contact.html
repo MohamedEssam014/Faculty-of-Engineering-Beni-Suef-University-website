@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تواصل مع كلية الهندسة بجامعة بني سويف. استخدم نموذج الاتصال لإرسال استفسارك أو اعثر على معلومات الاتصال والعنوان على الخريطة.">
+    <meta name="keywords" content="كلية الهندسة, جامعة بني سويف, اتصل بنا, تواصل معنا, نموذج الاتصال, معلومات الاتصال, عنوان الكلية, خريطة الكلية">
+
+    <title>اتصل بنا | كلية الهندسة</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bsu_dark_blue: '#1e40af',
+                        bsu_light_gray: '#f3f4f6',
+                        bsu_medium_blue: '#3b82f6',
+                        bsu_gold: '#FFC107',
+                    },
+                    fontFamily: {
+                        'cairo': ['Cairo', 'sans-serif'],
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0'},
+                            '100%': { opacity: '1'},
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(40px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        pulseLight: {
+                            '0%, 100%': { opacity: '0.1' },
+                            '50%': { opacity: '0.15' },
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'fade-in': 'fadeIn 1s ease-in-out forwards',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
+                        'pulse-light': 'pulseLight 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    transitionDelay: { '500': '500ms' }
+                },
+            },
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'cairo', sans-serif;
+            scroll-behavior: smooth;
+        }
+        nav ul li .dropdown-content {
+            display: none; position: absolute; background: white;
+            min-width: 200px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 8px; padding: 0.5rem 0; z-index: 50;
+            opacity: 0; transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        nav ul li:hover > .dropdown-content { display: block; opacity: 1; transform: translateY(0); }
+        .dropdown-content li a {
+            display: block; padding: 10px 15px; color: #374151;
+            transition: background-color 0.2s ease, padding-right 0.2s ease, color 0.2s ease; white-space: nowrap;
+        }
+        .dropdown-content li a:hover {
+            background-color: #f3f4f6; padding-right: 20px; color: #1e40af;
+        }
+        . {
+            opacity: 0; transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            will-change: opacity, transform;
+        }
+        ..animated { opacity: 1; transform: translateY(0); }
+        header { border-bottom: 3px solid #FFC107; }
+        #mobile-menu a:hover { background-color: #e5e7eb; }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-bsu_light_gray text-gray-800">
+
+    <header id="main-header" class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
+                    <img src="https://www2.0zz0.com/2025/10/08/14/393349642.png" alt="شعار كلية الهندسة جامعة بني سويف" class="w-12 h-12 rounded-full shadow transition-transform duration-300 group-hover:scale-110">
+                    <h1 class="text-xl md:text-2xl font-bold text-bsu_dark_blue group-hover:text-bsu_medium_blue transition-colors duration-200">كلية الهندسة</h1>
+                </a>
+            </div>
+
+            <nav class="hidden md:flex">
+                <ul class="flex space-x-5 rtl:space-x-reverse items-center">
+                    <li class="relative group">
+                        <a href="index.html" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">الرئيسية</a>
+                        <ul class="dropdown-content">
+                            <li><a href="dean-word.html">كلمة عميد الكلية</a></li>
+                            <li><a href="vision-mission.html">الرؤية والرسالة والأهداف</a></li>
+                            <li><a href="regulations.html">اللائحة الداخلية</a></li>
+                            <li><a href="laws-regulations.html">القوانين واللوائح</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">عن الكلية</a></li>
+                    <li class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">الأقسام العلمية</a>
+                        <ul class="dropdown-content">
+                            <li><a href="civil-engineering.html">قسم الهندسة المدنية</a></li>
+                            <li><a href="architectural-engineering.html">قسم الهندسة المعمارية</a></li>
+                            <li><a href="electrical-engineering.html">قسم الهندسة الكهربية</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">البرامج الدراسية</a>
+                        <ul class="dropdown-content">
+                            <li><a href="structural-engineering.html">برنامج الهندسة الإنشائية</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">الطلاب</a>
+                        <ul class="dropdown-content w-56">
+                            <li><a href="http://www.email.bsu.edu.eg/_BSU_Std.aspx" target="_blank" rel="noopener noreferrer">الحصول على البريد الإلكتروني</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=284" target="_blank" rel="noopener noreferrer">منتدى الطلاب</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=286" target="_blank" rel="noopener noreferrer">المدن الجامعية</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=277" target="_blank" rel="noopener noreferrer">رعاية الشباب</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=53" target="_blank" rel="noopener noreferrer">إدارة الوافدين</a></li>
+                            <li><a href="http://www.results.bsu.edu.eg/" target="_blank" rel="noopener noreferrer">نتائج الكليات</a></li>
+                            <li><a href="http://www.bsu.edu.eg/Sector_Home.aspx?cat_id=283" target="_blank" rel="noopener noreferrer">التربية العسكرية</a></li>
+                            <li><a href="http://www.payment.bsu.edu.eg/services/" target="_blank" rel="noopener noreferrer">خدمات الدفع الإلكتروني</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">الخدمات</a>
+                        <ul class="dropdown-content">
+                            <li><a href="services/certificates.php">البحث عن الشهادات</a></li>
+                            <li><a href="services/lectures.php">المحاضرات الدراسية</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="student-grades/src/index.php" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">درجات الطلاب</a></li>
+                    <li><a href="contact.html" class="text-bsu_dark_blue font-semibold transition-colors duration-200">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-bsu_dark_blue text-2xl" id="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="md:hidden bg-white shadow-lg absolute w-full top-full right-0 z-40 hidden" id="mobile-menu">
+            <ul class="px-4 py-2 space-y-1">
+                <li><a href="index.html" class="block py-2 px-3 rounded hover:bg-bsu_light_gray">الرئيسية</a></li>
+                <li><a href="about.html" class="block py-2 px-3 rounded hover:bg-bsu_light_gray">عن الكلية</a></li>
+                <li><a href="contact.html" class="block py-2 px-3 rounded bg-bsu_light_gray font-semibold text-bsu_dark_blue">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero bg-gradient-to-l from-bsu_dark_blue to-bsu_medium_blue text-white py-16 md:py-20 relative overflow-hidden">
+            <div class="container mx-auto px-4 text-center relative z-10">
+                 <div class="inline-block bg-white bg-opacity-20 p-4 rounded-full mb-4 animate-fade-in-up">
+                    <i class="fas fa-headset text-8xl md:text-9xl text-white"></i>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 animate-slide-in-left">اتصل بنا</h2>
+                <p class="text-lg md:text-xl animate-fade-in-up delay-500">نحن هنا للإجابة على استفساراتكم ومساعدتكم.</p>
+            </div>
+            <div class="absolute inset-0 bg-black opacity-10 animate-pulse-light"></div>
+            <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-bsu_light_gray to-transparent"></div>
+        </section>
+
+        <section class="contact py-12 md:py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12 text-bsu_dark_blue border-b-2 border-bsu_gold pb-2 inline-block mx-auto table">
+                    <i class="fas fa-envelope-open-text mr-2 text-bsu_medium_blue"></i> تواصل معنا مباشرة
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 ">
+
+                    <div class="contact-form bg-bsu_light_gray p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl md:text-2xl font-semibold mb-6 text-bsu_dark_blue flex items-center">
+                           <i class="fas fa-paper-plane mr-3 text-bsu_medium_blue"></i> أرسل لنا رسالة
+                        </h3>
+                        <form action="#" method="post" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">الاسم الكامل</label>
+                                <input type="text" id="name" name="name" required placeholder="ادخل اسمك هنا" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm transition duration-150">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" required placeholder="example@domain.com" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm transition duration-150">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">الموضوع</label>
+                                <input type="text" id="subject" name="subject" required placeholder="موضوع الرسالة" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm transition duration-150">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">نص الرسالة</label>
+                                <textarea id="message" name="message" required placeholder="اكتب رسالتك هنا..." class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm transition duration-150" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-bsu_dark_blue text-white py-2.5 px-4 rounded-md hover:bg-bsu_medium_blue focus:outline-none focus:ring-2 focus:ring-bsu_medium_blue focus:ring-opacity-50 transition-colors duration-300 font-semibold flex items-center justify-center">
+                                <i class="fas fa-paper-plane mr-2"></i> إرسال الرسالة
+                            </button>
+                        </form>
+                         <p class="text-xs text-center mt-3 text-gray-500">هذا النموذج للعرض فقط ولا يقوم بالإرسال حالياً.</p>
+                    </div>
+
+                    <div class="contact-info bg-bsu_light_gray p-6 md:p-8 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl md:text-2xl font-semibold mb-6 text-bsu_dark_blue flex items-center">
+                            <i class="fas fa-map-marked-alt mr-3 text-bsu_medium_blue"></i> معلومات الاتصال والموقع
+                        </h3>
+                        <address class="space-y-4 not-italic text-base md:text-lg text-gray-700">
+                            <p class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-bsu_medium_blue mt-1 ml-3 flex-shrink-0 w-5 text-center"></i>
+                                <span><strong>العنوان:</strong> شارع صلاح سالم، جامعة بني سويف، بني سويف، مصر</span>
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fas fa-phone text-bsu_medium_blue ml-3 flex-shrink-0 w-5 text-center"></i>
+                                <span><strong>الهاتف:</strong> <a href="tel:+20822356845" class="hover:text-bsu_medium_blue transition-colors">2356845 082 20+</a></span>
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fas fa-envelope text-bsu_medium_blue ml-3 flex-shrink-0 w-5 text-center"></i>
+                                <span><strong>البريد:</strong> <a href="mailto:info@eng.bsu.edu.eg" class="hover:text-bsu_medium_blue transition-colors">info@eng.bsu.edu.eg</a></span>
+                            </p>
+                        </address>
+                        <div class="map-container mt-6 border border-gray-200 rounded-lg overflow-hidden shadow">
+                             <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3489.815777771746!2d31.10001851509424!3d29.0718719822699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145a27cf9bf51717%3A0x6a1c6a6f3b5d26a7!2sFaculty%20of%20Engineering%20Beni-Suef%20University!5e0!3m2!1sen!2seg!4v1678886543210!5m2!1sen!2seg"
+                                class="w-full h-60 md:h-64"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="موقع كلية الهندسة جامعة بني سويف على الخريطة">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>© <span id="currentYear"></span> كلية الهندسة، جامعة بني سويف. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

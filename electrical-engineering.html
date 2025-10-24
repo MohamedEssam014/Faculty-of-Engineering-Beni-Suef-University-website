@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تعرف على قسم الهندسة الكهربية بكلية الهندسة جامعة بني سويف، وبرامجه المتخصصة في هندسة الإلكترونيات والاتصالات وهندسة القوى والآلات الكهربية.">
+    <meta name="keywords" content="كلية الهندسة, جامعة بني سويف, قسم الهندسة الكهربية, هندسة الإلكترونيات, هندسة الاتصالات, هندسة القوى الكهربية, هندسة الآلات الكهربية, جدارات الخريجين">
+
+    <title>قسم الهندسة الكهربية | كلية الهندسة</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bsu_dark_blue: '#1e40af',
+                        bsu_light_gray: '#f3f4f6',
+                        bsu_medium_blue: '#3b82f6',
+                        bsu_gold: '#FFC107',
+                    },
+                    fontFamily: {
+                        'cairo': ['Cairo', 'sans-serif'],
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0'},
+                            '100%': { opacity: '1'},
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(40px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        pulseLight: {
+                            '0%, 100%': { opacity: '0.1' },
+                            '50%': { opacity: '0.15' },
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'fade-in': 'fadeIn 1s ease-in-out forwards',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
+                        'pulse-light': 'pulseLight 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    transitionDelay: { '500': '500ms' }
+                },
+            },
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'cairo', sans-serif;
+            scroll-behavior: smooth;
+        }
+        nav ul li .dropdown-content {
+            display: none; position: absolute; background: white;
+            min-width: 200px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 8px; padding: 0.5rem 0; z-index: 50;
+            opacity: 0; transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        nav ul li:hover > .dropdown-content { display: block; opacity: 1; transform: translateY(0); }
+        .dropdown-content li a {
+            display: block; padding: 10px 15px; color: #374151;
+            transition: background-color 0.2s ease, padding-right 0.2s ease, color 0.2s ease; white-space: nowrap;
+        }
+        .dropdown-content li a:hover {
+            background-color: #f3f4f6; padding-right: 20px; color: #1e40af;
+        }
+        .{
+            opacity: 0; transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            will-change: opacity, transform;
+        }
+        .scroll-animate.animated { opacity: 1; transform: translateY(0); }
+        header { border-bottom: 3px solid #FFC107; }
+        #mobile-menu a:hover { background-color: #e5e7eb; }
+        .hover-list li { transition: color 0.2s ease; }
+        .hover-list li:hover { color: #3b82f6; }
+    </style>
+</head>
+
+<body class="bg-bsu_light_gray text-gray-800">
+
+    <header id="main-header" class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
+                    <img src="https://www2.0zz0.com/2025/10/08/14/393349642.png" alt="شعار كلية الهندسة جامعة بني سويف" class="w-12 h-12 rounded-full shadow transition-transform duration-300 group-hover:scale-110">
+                    <h1 class="text-xl md:text-2xl font-bold text-bsu_dark_blue group-hover:text-bsu_medium_blue transition-colors duration-200">كلية الهندسة</h1>
+                </a>
+            </div>
+
+            <nav class="hidden md:flex">
+                <ul class="flex space-x-5 rtl:space-x-reverse items-center">
+                    <li class="relative group">
+                        <a href="index.html" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">الرئيسية</a>
+                        <ul class="dropdown-content">
+                            <li><a href="dean-word.html">كلمة عميد الكلية</a></li>
+                            <li><a href="vision-mission.html">الرؤية والرسالة والأهداف</a></li>
+                            <li><a href="regulations.html">اللائحة الداخلية</a></li>
+                            <li><a href="laws-regulations.html">القوانين واللوائح</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">عن الكلية</a></li>
+                    <li class="relative group">
+                        <a href="#" class="text-bsu_dark_blue font-semibold transition-colors duration-200">الأقسام العلمية</a>
+                        <ul class="dropdown-content">
+                           <li><a href="civil-engineering.html">قسم الهندسة المدنية</a></li>
+                            <li><a href="architectural-engineering.html">قسم الهندسة المعمارية</a></li>
+                            <li><a href="electrical-engineering.html" class="bg-bsu_light_gray text-bsu_dark_blue font-semibold">قسم الهندسة الكهربية</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">البرامج الدراسية</a>
+                        <ul class="dropdown-content">
+                            <li><a href="structural-engineering.html">برنامج الهندسة الإنشائية</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">الطلاب</a>
+                        <ul class="dropdown-content w-56">
+                            <li><a href="http://www.email.bsu.edu.eg/_BSU_Std.aspx" target="_blank" rel="noopener noreferrer">الحصول على البريد الإلكتروني</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=284" target="_blank" rel="noopener noreferrer">منتدى الطلاب</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=286" target="_blank" rel="noopener noreferrer">المدن الجامعية</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=277" target="_blank" rel="noopener noreferrer">رعاية الشباب</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=53" target="_blank" rel="noopener noreferrer">إدارة الوافدين</a></li>
+                            <li><a href="http://www.results.bsu.edu.eg/" target="_blank" rel="noopener noreferrer">نتائج الكليات</a></li>
+                            <li><a href="http://www.bsu.edu.eg/Sector_Home.aspx?cat_id=283" target="_blank" rel="noopener noreferrer">التربية العسكرية</a></li>
+                            <li><a href="http://www.payment.bsu.edu.eg/services/" target="_blank" rel="noopener noreferrer">خدمات الدفع الإلكتروني</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">الخدمات</a>
+                        <ul class="dropdown-content">
+                            <li><a href="services/certificates.php">البحث عن الشهادات</a></li>
+                            <li><a href="services/lectures.php">المحاضرات الدراسية</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="student-grades/src/index.php" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">درجات الطلاب</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-bsu_dark_blue text-2xl" id="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="md:hidden bg-white shadow-lg absolute w-full top-full right-0 z-40 hidden" id="mobile-menu">
+            <ul class="px-4 py-2 space-y-1">
+                <li><a href="index.html" class="block py-2 px-3 rounded hover:bg-bsu_light_gray">الرئيسية</a></li>
+                <li><a href="about.html" class="block py-2 px-3 rounded hover:bg-bsu_light_gray">عن الكلية</a></li>
+                <li><a href="#" class="block py-2 px-3 rounded hover:bg-bsu_light_gray font-semibold text-bsu_dark_blue">الأقسام العلمية</a></li>
+                <li><a href="civil-engineering.html" class="block py-2 pl-6 pr-3 rounded hover:bg-bsu_light_gray">الهندسة المدنية</a></li>
+                <li><a href="architectural-engineering.html" class="block py-2 pl-6 pr-3 rounded hover:bg-bsu_light_gray">الهندسة المعمارية</a></li>
+                <li><a href="electrical-engineering.html" class="block py-2 pl-6 pr-3 rounded bg-bsu_light_gray font-semibold text-bsu_dark_blue">الهندسة الكهربية</a></li>
+                <li><a href="contact.html" class="block py-2 px-3 rounded hover:bg-bsu_light_gray">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero bg-gradient-to-l from-bsu_dark_blue to-bsu_medium_blue text-white py-16 md:py-20 relative overflow-hidden">
+            <div class="container mx-auto px-4 text-center relative z-10">
+                <div class="inline-block bg-white bg-opacity-20 p-4 rounded-full mb-4 animate-fade-in-up">
+                    <i class="fas fa-bolt text-8xl md:text-9xl text-white"></i>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 animate-slide-in-left">قسم الهندسة الكهربية</h2>
+                <p class="text-lg md:text-xl animate-fade-in-up delay-500">برامج متقدمة في الإلكترونيات، الاتصالات، القوى، والآلات الكهربية.</p>
+            </div>
+            <div class="absolute inset-0 bg-black opacity-10 animate-pulse-light"></div>
+            <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-bsu_light_gray to-transparent"></div>
+        </section>
+
+        <section class="page-content py-12 md:py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+
+                <article class="mb-10 p-6 bg-bsu_light_gray rounded-lg shadow-sm border-r-4 border-bsu_medium_blue">
+                    <h2 class="text-2xl md:text-3xl font-bold text-bsu_dark_blue mb-5 border-b-2 border-bsu_gold pb-2">
+                        <i class="fas fa-info-circle mr-2 text-bsu_medium_blue"></i> عن برنامج الهندسة الكهربية
+                    </h2>
+                    <p class="text-base md:text-lg leading-relaxed text-gray-700 mb-3">يهدف قسم الهندسة الكهربائية إلى تحقيق التميز والريادة في التعليم الهندسي، وتوفير مستوى تعليمي راق للخريجين من خلال أنشطة تدريبية تجعلهم متميزين وذوي قدرة تنافسية عالية في مجال الهندسة الكهربائية.</p>
+                    <p class="text-base md:text-lg leading-relaxed text-gray-700">يركز البرنامج على تخريج مهندسين أكفاء قادرين على التعلم المستمر ومواكبة التطورات التكنولوجية المتلاحقة، وذلك عبر تقديم برنامج دراسي متكامل يجمع بين المعرفة النظرية والمهارات التقنية.</p>
+                </article>
+
+                <hr class="my-10 border-gray-200">
+
+                <article class="mb-10 p-6 bg-bsu_light_gray rounded-lg shadow-sm border-r-4 border-bsu_medium_blue">
+                    <h3 class="text-xl md:text-2xl font-bold text-bsu_medium_blue mb-4">
+                       <i class="fas fa-satellite-dish mr-2"></i> 1. برنامج هندسة الإلكترونيات والاتصالات
+                    </h3>
+                    <div class="space-y-4 text-base md:text-lg text-gray-700">
+                        <div>
+                            <h4 class="text-lg font-semibold text-bsu_dark_blue mb-2">وصف البرنامج:</h4>
+                            <p>يهدف لتقديم المعرفة التحليلية والتكنولوجية المتقدمة في الإلكترونيات ونظم الاتصالات، مع التركيز على مهارات تصميم (VLSI)، دوائر (RF)، الأنظمة المدمجة، شبكات الاتصالات، معالجة الإشارات، وأنظمة الفوتونات.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-bsu_dark_blue mb-2">تخصص الخريج:</h4>
+                            <ul class="list-disc list-inside space-y-1 ml-4 hover-list">
+                                <li><strong>إلكترونيات:</strong> تصميم وتحليل وبناء الدوائر والأنظمة الإلكترونية.</li>
+                                <li><strong>هندسة الاتصالات:</strong> تصميم وتحليل وبناء شبكات وأنظمة الاتصالات الحديثة.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-bsu_dark_blue mb-2">جدارات خاصة بالبرنامج:</h4>
+                            <ul class="list-decimal list-inside space-y-1 ml-4 text-sm md:text-base hover-list">
+                                <li>فهم الظواهر الفيزيائية والقيود الأساسية للمكونات والأنظمة.</li>
+                                <li>بناء نماذج للأنظمة وتحليل مكوناتها وتحديد أدوات البرامج لتحسين أدائها.</li>
+                                <li>التصميم والمقارنة بين المكونات والأنظمة البديلة.</li>
+                                <li>المعرفة بمعدات القياس واستخدامها لتوصيف المكونات والأنظمة.</li>
+                                <li>المعرفة بأحدث مستجدات مكونات الأنظمة.</li>
+                                <li>(إلكترونيات) نمذجة وتحليل وتصميم وبناء الدوائر والأنظمة الإلكترونية.</li>
+                                <li>(اتصالات) نمذجة وتحليل وتصميم وبناء أنظمة وشبكات هندسة الاتصالات.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <hr class="my-10 border-gray-200">
+
+                <article class="p-6 bg-bsu_light_gray rounded-lg shadow-sm border-r-4 border-bsu_medium_blue">
+                    <h3 class="text-xl md:text-2xl font-bold text-bsu_medium_blue mb-4">
+                       <i class="fas fa-cogs mr-2"></i> 2. برنامج هندسة القوى والآلات الكهربية
+                    </h3>
+                     <div class="space-y-4 text-base md:text-lg text-gray-700">
+                         <div>
+                            <h4 class="text-lg font-semibold text-bsu_dark_blue mb-2">وصف البرنامج:</h4>
+                            <p>يهدف لتحقيق التميز والريادة في مجال هندسة القوى والآلات، وتخريج مهندسين قادرين على مواكبة التطورات التكنولوجية في هذا المجال الحيوي.</p>
+                        </div>
+                         <div>
+                            <h4 class="text-lg font-semibold text-bsu_dark_blue mb-2">جدارات خاصة بالبرنامج:</h4>
+                            <ul class="list-decimal list-inside space-y-1 ml-4 text-sm md:text-base hover-list">
+                                <li>تحديد وصياغة وحل المشاكل الهندسية في مجال الطاقة الكهربائية وهندسة الآلات.</li>
+                                <li>تحليل أداء توليد الطاقة الكهربائية وأنظمة التحكم والتوزيع.</li>
+                                <li>تصميم وتنفيذ التجارب وتحليل وتفسير النتائج التجريبية المتعلقة بالطاقة والآلات.</li>
+                                <li>اختبار وفحص المكونات والمعدات وأنظمة الطاقة الكهربائية والآلات.</li>
+                                <li>دمج المكونات الكهربائية والإلكترونية والميكانيكية مع محولات الطاقة والمحركات وأجهزة التحكم.</li>
+                                <li>تطبيق التقنيات والمهارات والأدوات الهندسية الحديثة على أنظمة هندسة الطاقة.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>© <span id="currentYear"></span> كلية الهندسة، جامعة بني سويف. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

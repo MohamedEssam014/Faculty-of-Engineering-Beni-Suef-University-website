@@ -1,0 +1,99 @@
+/* ========================================
+   Custom Animations (Keyframes Definitions)
+   ======================================== */
+
+/* Simple Fade In */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Fade In with Upward Motion */
+@keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(20px); /* Slightly reduced distance */ }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide In from Left (Adjust distance as needed) */
+@keyframes slide-in-left {
+    from { opacity: 0; transform: translateX(-40px); /* Slightly reduced distance */ }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Subtle Bounce (Reduced intensity and duration) */
+@keyframes bounce-subtle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); } /* Smaller bounce height */
+}
+
+/* ========================================
+   Animation Utility Classes
+   ======================================== */
+
+/* Apply animations directly */
+.animate-fade-in {
+    animation: fade-in 1s ease-out forwards; /* Use 'forwards' to keep final state */
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards; /* Slightly faster */
+}
+
+.animate-slide-in-left {
+    animation: slide-in-left 0.8s ease-out forwards; /* Slightly faster */
+}
+
+/* Use a more subtle bounce, perhaps for icons or specific elements */
+.animate-bounce-subtle {
+    animation: bounce-subtle 1.5s infinite ease-in-out;
+}
+
+/* ========================================
+   Scroll Animation Classes
+   ======================================== */
+
+/* Initial state for elements animating on scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px); /* Initial offset */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+    will-change: opacity, transform; /* Performance hint for the browser */
+}
+
+/* State when the element becomes visible */
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   Hover Effects
+   ======================================== */
+
+/* Simple lift effect for news items */
+.news-item { /* Assuming .news-item exists in your HTML */
+    transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.news-item:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Optional: Enhance shadow on hover */
+}
+
+/* ========================================
+   Responsive Adjustments
+   ======================================== */
+
+@media (max-width: 768px) { /* Target tablets and smaller */
+    /* Adjust hero text sizes for smaller screens */
+    .hero h2 { /* Assuming .hero exists */
+        font-size: 2rem; /* Adjusted size */
+    }
+    .hero p {
+        font-size: 1.1rem; /* Adjusted size */
+    }
+
+    /* Add more responsive rules as needed */
+}
+
+/* Consider adding a @media rule for even smaller screens (e.g., max-width: 480px) if necessary */

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="تعرف على رؤية ورسالة وأهداف كلية الهندسة بجامعة بني سويف وسعيها للريادة في التعليم الهندسي والبحث العلمي." />
+    <meta name="keywords" content="كلية الهندسة, جامعة بني سويف, رؤية الكلية, رسالة الكلية, أهداف الكلية, التعليم الهندسي, البحث العلمي" />
+
+    <title>الرؤية والرسالة والأهداف | كلية الهندسة</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { // Using simpler names matching BSU colors
+                        bsu_dark_blue: '#1e40af', // Primary
+                        bsu_light_gray: '#f3f4f6', // Secondary BG
+                        bsu_medium_blue: '#3b82f6', // Accent
+                        bsu_gold: '#FFC107',
+                    },
+                    fontFamily: {
+                        'cairo': ['Cairo', 'sans-serif'],
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                         fadeIn: {
+                            '0%': { opacity: '0'},
+                            '100%': { opacity: '1'},
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'fade-in': 'fadeIn 1s ease-in-out forwards',
+                    }
+                },
+            },
+        }
+    </script>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Improved Dropdown appearance */
+        nav ul li .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 200px; /* Adjust as needed */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 8px; /* Softer edges */
+            padding: 0.5rem 0;
+            z-index: 50; /* Ensure dropdown is on top */
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        nav ul li:hover > .dropdown-content {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .dropdown-content li a {
+            display: block;
+            padding: 10px 15px;
+            color: #374151; /* gray-700 */
+            transition: background-color 0.2s ease, padding-right 0.2s ease; /* Smooth hover */
+            white-space: nowrap;
+        }
+        .dropdown-content li a:hover {
+            background-color: #f3f4f6; /* gray-100 */
+            padding-right: 20px; /* Slight indent on hover */
+            color: #1e40af; /* bsu_dark_blue */
+        }
+        /* Scroll Animation Setup */
+        [data-animate] {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        [data-animate].visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Add BSU Gold border */
+         header { border-bottom: 3px solid #FFC107; }
+         /* Hover effect for goals */
+         ol li { transition: color 0.2s ease; }
+         ol li:hover { color: #3b82f6; /* bsu_medium_blue */ }
+    </style>
+</head>
+
+<body class="bg-bsu_light_gray text-gray-800">
+
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://www2.0zz0.com/2025/10/08/14/393349642.png" alt="شعار كلية الهندسة جامعة بني سويف" class="w-12 h-12 rounded-full shadow">
+                <h1 class="text-xl md:text-2xl font-bold text-bsu_dark_blue">كلية الهندسة</h1>
+            </div>
+            <nav class="hidden md:block">
+                 <ul class="flex space-x-5 rtl:space-x-reverse items-center">
+                    <li class="relative">
+                        <a href="index.html" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">الرئيسية</a>
+                        <ul class="dropdown-content">
+                            <li><a href="dean-word.html">كلمة عميد الكلية</a></li>
+                            <li><a href="vision-mission.html" class="font-semibold text-bsu_dark_blue bg-bsu_light_gray">الرؤية والرسالة والأهداف</a></li> <li><a href="regulations.html">اللائحة الداخلية</a></li>
+                            <li><a href="laws-regulations.html">القوانين واللوائح</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">عن الكلية</a></li>
+                    <li class="relative">
+                        <a href="#" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">الأقسام العلمية</a>
+                        <ul class="dropdown-content">
+                           <li><a href="civil-engineering.html">قسم الهندسة المدنية</a></li>
+                            <li><a href="architectural-engineering.html">قسم الهندسة المعمارية</a></li>
+                            <li><a href="electrical-engineering.html">قسم الهندسة الكهربية</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">البرامج الدراسية</a>
+                        <ul class="dropdown-content">
+                            <li><a href="structural-engineering.html">برنامج الهندسة الإنشائية</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">الطلاب</a>
+                        <ul class="dropdown-content w-56"> <li><a href="http://www.email.bsu.edu.eg/_BSU_Std.aspx" target="_blank" rel="noopener noreferrer">الحصول على البريد الإلكتروني</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=284" target="_blank" rel="noopener noreferrer">منتدى الطلاب</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=286" target="_blank" rel="noopener noreferrer">المدن الجامعية</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=277" target="_blank" rel="noopener noreferrer">رعاية الشباب</a></li>
+                            <li><a href="https://www.bsu.edu.eg/Sector_Home.aspx?cat_id=53" target="_blank" rel="noopener noreferrer">إدارة الوافدين</a></li>
+                            <li><a href="http://www.results.bsu.edu.eg/" target="_blank" rel="noopener noreferrer">نتائج الكليات</a></li>
+                            <li><a href="http://www.bsu.edu.eg/Sector_Home.aspx?cat_id=283" target="_blank" rel="noopener noreferrer">التربية العسكرية</a></li>
+                            <li><a href="http://www.payment.bsu.edu.eg/services/" target="_blank" rel="noopener noreferrer">خدمات الدفع الإلكتروني</a></li>
+                        </ul>
+                    </li>
+                     <li class="relative">
+                         <a href="#" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">الخدمات</a>
+                         <ul class="dropdown-content">
+                            <li><a href="services/certificates.php">البحث عن الشهادات</a></li>
+                            <li><a href="services/lectures.php">المحاضرات الدراسية</a></li>
+                         </ul>
+                    </li>
+                    <li><a href="student-grades/src/index.php" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">درجات الطلاب</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-bsu_dark_blue font-semibold transition-colors duration-200">اتصل بنا</a></li>
+                </ul>
+            </nav>
+             <button class="md:hidden text-bsu_dark_blue text-2xl" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <section class="relative text-center py-16 md:py-20 bg-gradient-to-br from-bsu_dark_blue to-bsu_medium_blue text-white overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/lined-paper.png')] opacity-10"></div>
+        <div class="relative z-10 animate-fade-in">
+             <div class="inline-block bg-white bg-opacity-20 p-4 rounded-full mb-4">
+                 <i class="fas fa-bullseye text-8xl text-white"></i>
+             </div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">كلية الهندسة - جامعة بني سويف</h1>
+            <p class="text-lg md:text-xl opacity-90 font-semibold">الرؤية والرسالة والأهداف الاستراتيجية</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-10 md:py-16">
+        <section class="bg-white p-6 md:p-10 rounded-lg shadow-md max-w-4xl mx-auto" data-animate>
+            <h2 class="text-2xl md:text-3xl font-bold text-bsu_dark_blue mb-6 border-b-2 border-bsu_gold pb-2">
+                <i class="fas fa-flag-checkered mr-2 text-bsu_medium_blue"></i> الرؤية والرسالة والأهداف
+            </h2>
+            <div class="space-y-8 text-gray-700 text-base md:text-lg leading-relaxed">
+                <article>
+                    <h3 class="text-xl md:text-2xl font-semibold text-bsu_medium_blue mb-3 flex items-center">
+                        <i class="fas fa-eye mr-3"></i> رؤية الكلية
+                    </h3>
+                    <p>أن تكون واحدة من الكليات المشهود لها بالريادة محلياً واقليمياً في التعليم الهندسي والبحث العلمي من خلال تخصصات وبرامج أكاديمية تلبي احتياجات المجتمع وتساهم في التنمية المستدامة طبقا للمعايير الدولية.</p>
+                </article>
+
+                <hr class="border-gray-200">
+
+                <article>
+                    <h3 class="text-xl md:text-2xl font-semibold text-bsu_medium_blue mb-3 flex items-center">
+                       <i class="fas fa-paper-plane mr-3"></i> رسالة الكلية
+                    </h3>
+                    <p>تخريج مهندسين مؤهلين لتلبية احتياجات سوق العمل في القطاعات الهندسية والتكنولوجية والجهات الخدمية والمشروعات الوطنية من خلال برامج تعليمية تتوافق مع المعايير القومية الأكاديمية، وتمكنهم من إجراء أبحاث علمية وتطبيقية وذلك بتهيئة الظروف المناسبة لأعضاء هيئة التدريس ومعاونيهم والطلاب، وتوفير برامج تعليمية متقدمة في مرحلتي البكالوريوس والدراسات العليا، وإنشاء مراكز استشارية ومعامل بحثية وتطويع إمكانيات الكلية لتقديم خدمات للمجتمع المحيط بها، في إطار من القيم الجامعية.</p>
+                </article>
+
+                <hr class="border-gray-200">
+
+                <article>
+                    <h3 class="text-xl md:text-2xl font-semibold text-bsu_medium_blue mb-4 flex items-center">
+                        <i class="fas fa-tasks mr-3"></i> الأهداف الاستراتيجية للكلية:
+                    </h3>
+                    <ol class="list-decimal list-inside space-y-2 marker:text-bsu_medium_blue marker:font-bold">
+                        <li>دعم منظومة التعليم واعداد خريج قادر على المنافسة فى سوق العمل.</li>
+                        <li>دعم منظومة البحث العلمي والارتقاء بالوضع التنافسي للمؤسسة.</li>
+                        <li>تعزيز التعاون مع الخريجين والمؤسسات الخارجية والارتقاء بالمجتمع.</li>
+                        <li>تنمية الموارد المالية للكلية.</li>
+                        <li>تنمية وتطوير مهارات وكفاءة الموارد البشرية.</li>
+                        <li>دعم وتطوير نظم ضمان جودة التعليم وتحقيق التحسين المستمر.</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+         <div class="container mx-auto px-4">
+             <p>&copy; <?php echo date("Y"); ?> كلية الهندسة، جامعة بني سويف. جميع الحقوق محفوظة.</p>
+         </div>
+    </footer>
+
+    <script>
+        // --- Intersection Observer for Scroll Animations ---
+        const animatedElements = document.querySelectorAll("[data-animate]");
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target); // Stop observing once visible
+                }
+            });
+        }, { threshold: 0.15 }); // Trigger when 15% visible
+
+        animatedElements.forEach(el => observer.observe(el));
+
+         // --- Basic Mobile Menu Toggle (Add if needed) ---
+         const menuButton = document.querySelector('header button'); // Adjust selector if needed
+         const mobileNav = document.querySelector('header nav ul'); // Adjust selector if needed
+         // Add event listener if elements exist
+    </script>
+</body>
+</html>

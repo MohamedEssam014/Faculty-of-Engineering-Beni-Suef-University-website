@@ -1,0 +1,42 @@
+
+services:
+  # خدمة خادم الويب (Apache + PHP)
+  web:
+    build: .
+    security_opt:          # <-- أضف هذا السطر
+      - seccomp:unconfined # <-- وأضف هذا السطر
+    container_name: bsu-webserver
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - db
+
+  # خدمة قاعدة البيانات (MySQL)
+  db:
+    image: mysql:5.7
+    container_name: bsu-database
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: student_grades_db
+      MYSQL_USER: bsu_user
+      MYSQL_PASSWORD: bsu_password
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./student-grades/db:/docker-entrypoint-initdb.d
+
+  # واجهة رسومية لإدارة قاعدة البيانات
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: bsu-phpmyadmin
+    ports:
+      - "9090:80"
+    environment:
+      PMA_HOST: db
+    depends_on:
+      - db
+
+volumes:
+  db_data:
